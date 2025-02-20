@@ -1,0 +1,22 @@
+spring:
+  application:
+    name: SpringJWT
+  datasource:
+    driver-class-name: org.mariadb.jdbc.Driver
+    url: jdbc:mariadb://localhost:3306/mydb?useSSL=false&useUnicode=true&serverTimezone=Asia/Seoul&allowPublicKeyRetrieval=true
+    username: root
+    password: 1234=
+  jpa:
+    hibernate:
+      ddl-auto: create
+      naming:
+        physical-strategy: org.hibernate.boot.model.naming.PhysicalNamingStrategyStandardImpl        
+
+server:
+  port: 8080
+  
+#jwt:
+#    secret: ZWdvdmZyYW1ld29yaw== #egovframework
+#    expiration: 300000      
+
+
